@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Course Details - Your Cryptohack-Like Website</title>
+</head>
+<body>
+
+    <header>
+        <h1>LearnHub Connect</h1>
+        <i>"Empowering minds, one course at a time. LearnHub Connect, where knowledge meets opportunity."</i>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section id="main-content">
+        <h2>Course Details</h2>
+        <!-- Display course details -->
+        <p id="courseName">Course Name: </p>
+        <p id="courseInstructor">Instructor: </p>
+        <p id="courseHours">Hours: </p>
+        <p id="coursePrice">Price: </p>
+        <p id="courseDescription">Description: </p>
+        <p id="coursePrerequisites">Prerequisites: </p>
+        <p id="courseStartDate">Start Date: </p>
+
+        <button id="purchaseButton" onclick="showPurchaseForm()">Purchase Course</button>
+        <button id="cancelPurchaseButton" onclick="cancelPurchase()">Cancel Purchase</button>
+
+        <!-- Add this section inside your purchase form -->
+        <div id="purchaseForm" style="display: none;">
+            <h2>Purchase Course</h2>
+            <form onsubmit="return validatePurchaseForm()" class="purchase-form">
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="optionalEmail">Optional Email:</label>
+                    <input type="email" id="optionalEmail" name="optionalEmail">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="courseType">Course Type:</label>
+                    <select id="courseType" name="courseType" required>
+                        <option value="online">Online</option>
+                        <option value="onsite">Onsite</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="instructor">Instructor:</label>
+                    <select id="instructor" name="instructor" required>
+                        <option value="Instructor A">Ranim Hassine</option>
+                        <option value="Instructor B">Ousama Boubaker</option>
+                        <option value="Instructor C">Mortadha Manaii</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ribNumber">RIB Number:</label>
+                    <input type="text" id="ribNumber" name="ribNumber" required>
+                </div>
+
+                <button id="purchaseButton" onclick="submitPurchaseForm(event)">Submit Purchase</button>
+            </form>
+            <div id="recapTicket"></div>
+        </div>
+
+        <div id="purchaseSuccessMessage" style="display: none;">
+            <p>Congratulations! You've successfully purchased the course.</p>
+            <p>Redirecting to the main page...</p>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>At LearnHub Connect, we believe in the transformative power of education. Our platform is dedicated to providing a dynamic and engaging learning experience for individuals seeking to enhance their skills and knowledge. Whether you are a beginner taking your first steps or an experienced professional looking to stay ahead, we offer a diverse range of courses taught by industry experts. Our mission is to empower learners, foster a sense of curiosity, and create a vibrant community of knowledge seekers. Join us on this educational journey, and let's explore the boundless possibilities of learning together.</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: info@learnhubconnect.com</p>
+                <p>Phone: +216 20 468 880</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 LearnHub Connect. All rights reserved.</p>
+        </div>
+        <div class="credits">
+            <p>Credits: Alaa Eddine Ayedi, CEO and founder of LearnHub Connect.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Wrap the code in a DOMContentLoaded event listener
+        document.addEventListener("DOMContentLoaded", function () {
+            // Call showContent function with 'courses' as a parameter
+            // Call displayCourseDetails function to populate course details
+            displayCourseDetails();
+        });
+
+        function displayCourseDetails() {
+            var courseNameElement = document.getElementById("courseName");
+            var courseInstructorElement = document.getElementById("courseInstructor");
+            var courseHoursElement = document.getElementById("courseHours");
+            var coursePriceElement = document.getElementById("coursePrice");
+            var courseDescriptionElement = document.getElementById("courseDescription");
+            var coursePrerequisitesElement = document.getElementById("coursePrerequisites");
+            var courseStartDateElement = document.getElementById("courseStartDate");
+
+            // Retrieve course details from sessionStorage
+            var courseName = sessionStorage.getItem("courseName");
+            var courseInstructor = sessionStorage.getItem("courseInstructor");
+            var courseHours = sessionStorage.getItem("courseHours");
+            var coursePrice = sessionStorage.getItem("coursePrice");
+            var courseDescription = sessionStorage.getItem("courseDescription");
+            var coursePrerequisites = sessionStorage.getItem("coursePrerequisites");
+            var courseStartDate = sessionStorage.getItem("courseStartDate");
+
+            // Display course details in the HTML
+            courseNameElement.textContent = "Course Name: " + courseName;
+            courseInstructorElement.textContent = "Instructor: " + courseInstructor;
+            courseHoursElement.textContent = "Hours: " + courseHours;
+            coursePriceElement.textContent = "Price: " + coursePrice;
+            courseDescriptionElement.textContent = "Description: " + courseDescription;
+            coursePrerequisitesElement.textContent = "Prerequisites: " + coursePrerequisites;
+            courseStartDateElement.textContent = "Start Date: " + courseStartDate;
+        }
+    </script>
+</body>
+</html>

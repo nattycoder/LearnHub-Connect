@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Recap</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>LearnHub Connect</h1>
+        <i>"Empowering minds, one course at a time. LearnHub Connect, where knowledge meets opportunity."</i>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section id="main-content">
+        <h2>Recap Ticket</h2>
+        <div id="recapContent"></div>
+    </section>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>At LearnHub Connect, we believe in the transformative power of education. Our platform is dedicated to providing a dynamic and engaging learning experience for individuals seeking to enhance their skills and knowledge. Whether you are a beginner taking your first steps or an experienced professional looking to stay ahead, we offer a diverse range of courses taught by industry experts. Our mission is to empower learners, foster a sense of curiosity, and create a vibrant community of knowledge seekers. Join us on this educational journey, and let's explore the boundless possibilities of learning together.</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: info@learnhubconnect.com</p>
+                <p>Phone: +216 20 468 880</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 LearnHub Connect. All rights reserved.</p>
+        </div>
+        <div class="credits">
+            <p>Credits: Alaa Eddine Ayedi, CEO and founder of LearnHub Connect.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        // Retrieve purchase recap data from sessionStorage
+        var username = sessionStorage.getItem("purchaseRecapUsername");
+        var email = sessionStorage.getItem("purchaseRecapEmail");
+        var phone = sessionStorage.getItem("purchaseRecapPhone");
+        var address = sessionStorage.getItem("purchaseRecapAddress");
+        var courseType = sessionStorage.getItem("purchaseRecapCourseType");
+        var instructor = sessionStorage.getItem("purchaseRecapInstructor");
+
+        // Display the recap content
+        var recapContent = document.getElementById("recapContent");
+        recapContent.innerHTML = `
+            <p><strong>Username:</strong> ${username}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Phone:</strong> ${phone}</p>
+            <p><strong>Address:</strong> ${address}</p>
+            <p><strong>Course Type:</strong> ${courseType}</p>
+            <p><strong>Instructor:</strong> ${instructor}</p>
+            `;
+        });
+    </script>
+</body>
+</html>

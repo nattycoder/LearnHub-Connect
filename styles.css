@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #483d8b;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav.navbar {
+    background-color: #483d8b;
+    color: #fff;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section#main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #483d8b;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us,
+.contact-info,
+.copyright,
+.credits {
+    flex: 1;
+}
+
+.about-us h3,
+.contact-info h3,
+.credits p,
+.copyright p{
+    color: #d8bfd8 ;
+}
+
+/* Add this CSS for better form alignment */
+.purchase-form {
+    display: grid;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-group {
+    display: grid;
+    gap: 5px;
+}
+
+.recaptcha-group {
+    margin-top: 15px;
+}
+
+/* */
+nav.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav.navbar ul li {
+    margin: 0 15px;
+}
+
+#main-content h2 {
+    color: #cc3366;
+}
+
+/* Styles for "Courses" section */
+.course-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-list li {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.course-list img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.course-details {
+    flex-grow: 1;
+}
+
+.course-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.course-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for "Profile" section */
+.profile-info, .contact-info {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Styles for "Contact Us" section */
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}

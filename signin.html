@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign In - LearnHub Connect</title>
+</head>
+<body>
+
+    <header>
+        <h1>LearnHub Connect</h1>
+        <i>"Empowering minds, one course at a time. LearnHub Connect, where knowledge meets opportunity."</i>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="welcome.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <section id="main-content">
+        <h2>Sign In</h2>
+        <form id="signInForm">
+            <div class="form-group">
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <br>
+            <button type="button" onclick="submitSignInForm()">Sign In</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>At LearnHub Connect, we believe in the transformative power of education. Our platform is dedicated to providing a dynamic and engaging learning experience for individuals seeking to enhance their skills and knowledge. Whether you are a beginner taking your first steps or an experienced professional looking to stay ahead, we offer a diverse range of courses taught by industry experts. Our mission is to empower learners, foster a sense of curiosity, and create a vibrant community of knowledge seekers. Join us on this educational journey, and let's explore the boundless possibilities of learning together.</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: info@learnhubconnect.com</p>
+                <p>Phone: +216 20 468 880</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 LearnHub Connect. All rights reserved.</p>
+        </div>
+        <div class="credits">
+            <p>Credits: Alaa Eddine Ayedi, CEO and founder of LearnHub Connect.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>LearnHub Connect</title>
+    <script>
+        var username = sessionStorage.getItem("username");
+        var loginDate = sessionStorage.getItem("loginDate");
+
+        // If the user is logged in, display the username and login date at the top of the page
+        if (username) {
+            document.addEventListener("DOMContentLoaded", function () {
+                var userGreeting = document.createElement("p");
+                userGreeting.textContent = "Hello, " + username + "! You logged in on " + loginDate + ".";
+                userGreeting.style.textAlign = "center";
+                userGreeting.style.margin = "10px";
+                document.body.insertBefore(userGreeting, document.body.firstChild);
+            });
+        }
+
+        var currentBudget = sessionStorage.getItem("money");
+    </script>
+</head>
+<body>
+    
+    <header>
+        <h1>LearnHub Connect</h1>
+        <i>"Unlock Your Potential with Knowledge"</i>
+        <br>
+        <hr>
+        <p>Current Budget: <b><span id="currentBudget" style="color: #d8bfd8;"></span></b></p>
+        <hr>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <!--<li><a href="#" onclick="showContent('courses')">Courses</a></li>-->
+            <li><a href="#" onclick="showContent('courses')">Courses</a></li>
+            <li><a href="#" onclick="showContent('profile')">Profile</a></li>
+            <li><a href="#" onclick="showContent('contact')">Contact Us</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+
+    <section id="main-content">
+        <h2>Welcome to LearnHub Connect</h2>
+        <p>Unlock your potential with our diverse range of courses and challenges. Whether you're a beginner or an experienced professional, we have something for everyone.</p>
+        <p>Explore the world of learning, connect with industry experts, and join a community of knowledge seekers. Your journey to continuous learning begins here!</p>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="about-us">
+                <h3>About Us</h3>
+                <p>At LearnHub Connect, we believe in the transformative power of education. Our platform is dedicated to providing a dynamic and engaging learning experience for individuals seeking to enhance their skills and knowledge. Whether you are a beginner taking your first steps or an experienced professional looking to stay ahead, we offer a diverse range of courses taught by industry experts. Our mission is to empower learners, foster a sense of curiosity, and create a vibrant community of knowledge seekers. Join us on this educational journey, and let's explore the boundless possibilities of learning together.</p>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><b>Email: </b>info@learnhubconnect.com</p>
+                <p><b>Phone: </b>+216 20 468 880</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023 LearnHub Connect. All rights reserved.</p>
+        </div>
+        <div class="credits">
+            <p>Credits: Alaa Eddine Ayedi, CEO and founder of LearnHub Connect.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Retrieve the money amount from session storage
+        var currentBudget = sessionStorage.getItem("money");
+    
+        // Update the HTML to display the current budget
+        var currentBudgetElement = document.getElementById("currentBudget");
+        if (currentBudget) {
+            currentBudgetElement.textContent = currentBudget + " DINARS";
+        }
+    </script>
+</body>
+</html>
