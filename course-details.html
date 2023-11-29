@@ -21,7 +21,7 @@
 
     <section id="main-content">
         <h2>Course Details</h2>
-        <!-- Display course details -->
+        // Display course details
         <p id="courseName">Course Name: </p>
         <p id="courseInstructor">Instructor: </p>
         <p id="courseHours">Hours: </p>
@@ -33,7 +33,6 @@
         <button id="purchaseButton" onclick="showPurchaseForm()">Purchase Course</button>
         <button id="cancelPurchaseButton" onclick="cancelPurchase()">Cancel Purchase</button>
 
-        <!-- Add this section inside your purchase form -->
         <div id="purchaseForm" style="display: none;">
             <h2>Purchase Course</h2>
             <form onsubmit="return validatePurchaseForm()" class="purchase-form">
@@ -118,10 +117,7 @@
 
     <script src="script.js"></script>
     <script>
-        // Wrap the code in a DOMContentLoaded event listener
         document.addEventListener("DOMContentLoaded", function () {
-            // Call showContent function with 'courses' as a parameter
-            // Call displayCourseDetails function to populate course details
             displayCourseDetails();
         });
 
