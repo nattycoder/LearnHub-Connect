@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-23T12:49:53.256Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0" etag="tlWhY30DmLqk-m3NCTFk" version="24.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-23T13:57:38.417Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0" etag="usmd01yAXOit_KHym0al" version="24.6.2" type="github">
   <diagram name="Page-1" id="b3lSfJ-mZ4IB6_b0n24v">
-    <mxGraphModel dx="2950" dy="1058" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2600" dy="882" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -186,11 +186,11 @@
         <mxCell id="QeLuO8RoZQrud-wa69J5-84" value="&lt;div&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;Alerts/Case Management&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="QeLuO8RoZQrud-wa69J5-89">
           <mxGeometry x="5" y="110" width="230" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QeLuO8RoZQrud-wa69J5-86" value="&lt;div&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;.&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="QeLuO8RoZQrud-wa69J5-89">
-          <mxGeometry x="5" y="160" width="230" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="QeLuO8RoZQrud-wa69J5-88" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FFFFFF;" vertex="1" parent="QeLuO8RoZQrud-wa69J5-89">
           <mxGeometry width="245" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="QeLuO8RoZQrud-wa69J5-86" value="&lt;div&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;Agents Management&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;. . .&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="QeLuO8RoZQrud-wa69J5-89">
+          <mxGeometry x="5" y="160" width="230" height="30" as="geometry" />
         </mxCell>
         <mxCell id="QeLuO8RoZQrud-wa69J5-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.012;entryY=0.399;entryDx=0;entryDy=0;entryPerimeter=0;shape=flexArrow;strokeColor=#FFFFFF;" edge="1" parent="1" source="QeLuO8RoZQrud-wa69J5-19" target="QeLuO8RoZQrud-wa69J5-88">
           <mxGeometry relative="1" as="geometry" />
@@ -250,6 +250,12 @@
         </mxCell>
         <mxCell id="QeLuO8RoZQrud-wa69J5-115" value="&lt;div&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;Perform&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;Responsive Actions&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="520" y="668" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="QeLuO8RoZQrud-wa69J5-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="QeLuO8RoZQrud-wa69J5-117" target="QeLuO8RoZQrud-wa69J5-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QeLuO8RoZQrud-wa69J5-117" value="&lt;div&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;Agents&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp;(Elastic Agent/Security Agent)&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="502.97" y="1130" width="277.03" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
