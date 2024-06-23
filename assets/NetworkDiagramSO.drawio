@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-23T14:10:25.060Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0" etag="TKLlgpxyU5TMLzurbeMf" version="24.6.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-23T20:42:29.873Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0" etag="ZXkveoEhqIqDWzKLRz9B" version="24.6.2" type="github">
   <diagram name="Page-1" id="b3lSfJ-mZ4IB6_b0n24v">
-    <mxGraphModel dx="2350" dy="756" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2950" dy="1058" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -97,6 +97,9 @@
         <mxCell id="QeLuO8RoZQrud-wa69J5-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="QeLuO8RoZQrud-wa69J5-42" source="QeLuO8RoZQrud-wa69J5-40" target="QeLuO8RoZQrud-wa69J5-40">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="QeLuO8RoZQrud-wa69J5-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="QeLuO8RoZQrud-wa69J5-42" source="QeLuO8RoZQrud-wa69J5-40" target="QeLuO8RoZQrud-wa69J5-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="QeLuO8RoZQrud-wa69J5-50" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="-73" y="380" width="222" height="130" as="geometry" />
         </mxCell>
@@ -178,11 +181,11 @@
         <mxCell id="QeLuO8RoZQrud-wa69J5-134" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;Health Monitoring&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="QeLuO8RoZQrud-wa69J5-89">
           <mxGeometry x="32.5" y="170" width="180" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="QeLuO8RoZQrud-wa69J5-135" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;. . .&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="QeLuO8RoZQrud-wa69J5-89">
-          <mxGeometry x="32.5" y="210" width="180" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="QeLuO8RoZQrud-wa69J5-88" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FFFFFF;" vertex="1" parent="QeLuO8RoZQrud-wa69J5-89">
           <mxGeometry y="-1.7763568394002505e-14" width="245" height="257" as="geometry" />
+        </mxCell>
+        <mxCell id="QeLuO8RoZQrud-wa69J5-135" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px;&quot;&gt;. . .&lt;br&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="QeLuO8RoZQrud-wa69J5-89">
+          <mxGeometry x="32.5" y="210" width="180" height="30" as="geometry" />
         </mxCell>
         <mxCell id="QeLuO8RoZQrud-wa69J5-77" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="290" y="250" width="64" height="100" as="geometry" />
@@ -271,6 +274,15 @@
         </mxCell>
         <mxCell id="QeLuO8RoZQrud-wa69J5-121" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#FFFFFF;" vertex="1" parent="1">
           <mxGeometry x="670" y="140" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="QeLuO8RoZQrud-wa69J5-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;dashPattern=8 8;strokeColor=#FFFFFF;" edge="1" parent="1" source="QeLuO8RoZQrud-wa69J5-48" target="QeLuO8RoZQrud-wa69J5-40">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="800" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="60" y="510" />
+              <mxPoint x="60" y="770" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
